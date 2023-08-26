@@ -1,0 +1,103 @@
+.overlay {
+  width: 100%;
+  z-index: 2;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container1 {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  padding: 50px;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  height: 50%;
+  background-color: rgb(31 41 55);
+  border-radius: 10px;
+  box-shadow: 3px 6px 16px rgba(156, 163, 175, 0.8); /* Use the shadow color #9ca3af */
+}
+
+.container1 > h1 {
+  right: 50%;
+  text-align: center;
+  padding: 3px;
+  font-size: large;
+  color: white !important;
+}
+
+.container1 > h2 {
+  font-size: medium;
+  color: white;
+  text-align: center;
+}
+
+input {
+  border-width: 0.5em;
+  box-shadow: 0.5em;
+  display: block;
+  margin: 10px auto;
+  width: 75%;
+  border: 0.5em solid transparent; /* Start with transparent border */
+  display: block;
+}
+
+input:focus {
+  border-color: rgb(147, 197, 253);
+}
+
+@keyframes borderAnimation {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(100%) translateY(0);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    transform: translateX(0) translateY(100%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.container1 > button {
+  display: block;
+  padding: 10px 20px;
+  background-color: rgb(147, 197, 253);
+  color: rgb(14, 13, 13);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.container1 > button:hover {
+  background-color: rgb(117, 167, 223);
+}
+
+.container1 > p:hover {
+  background-color: rgb(117, 167, 223);
+}
+
+.closebtn {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  background-color: rgb(147 197 253);
+  display: block;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  color: black;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+}

@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 const Background = () => {
   return (
     <div className="w-full relative h-screen overflow-hidden flex items-center">
-      <video src={bgvideo} autoPlay loop muted className="min-w-full overflow-auto object-cover min-h-full z-0"></video>
+      <video src={bgvideo} autoPlay loop className="min-w-full overflow-auto object-cover min-h-full z-0"></video>
       <div className="absolute sm:hidden bottom-96 z-10 ">
         <img src={logo} alt="logo" className="w-40 h-44" />
       </div>
